@@ -1,0 +1,179 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.9.4
+2 info using node@v21.7.3
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/container/.npmrc
+5 silly config load:file:/usr/local/etc/npmrc
+6 verbose title npm install
+7 verbose argv "install"
+8 verbose logfile logs-max:10 dir:/home/container/.npm/_logs/2026-03-01T17_13_27_849Z-
+9 verbose logfile /home/container/.npm/_logs/2026-03-01T17_13_27_849Z-debug-0.log
+10 silly logfile start cleaning logs, removing 1 files
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 warn EBADENGINE Unsupported engine {
+14 warn EBADENGINE   package: 'balanced-match@4.0.4',
+14 warn EBADENGINE   required: { node: '18 || 20 || >=22' },
+14 warn EBADENGINE   current: { node: 'v21.7.3', npm: '10.9.4' }
+14 warn EBADENGINE }
+15 warn EBADENGINE Unsupported engine {
+15 warn EBADENGINE   package: 'brace-expansion@5.0.4',
+15 warn EBADENGINE   required: { node: '18 || 20 || >=22' },
+15 warn EBADENGINE   current: { node: 'v21.7.3', npm: '10.9.4' }
+15 warn EBADENGINE }
+16 warn EBADENGINE Unsupported engine {
+16 warn EBADENGINE   package: 'minimatch@10.2.4',
+16 warn EBADENGINE   required: { node: '18 || 20 || >=22' },
+16 warn EBADENGINE   current: { node: 'v21.7.3', npm: '10.9.4' }
+16 warn EBADENGINE }
+17 silly reify moves {}
+18 silly audit bulk request {
+18 silly audit   '@mongodb-js/saslprep': [ '1.4.6' ],
+18 silly audit   '@types/webidl-conversions': [ '7.0.3' ],
+18 silly audit   '@types/whatwg-url': [ '11.0.5' ],
+18 silly audit   accepts: [ '1.3.8' ],
+18 silly audit   anymatch: [ '3.1.3' ],
+18 silly audit   'array-flatten': [ '1.1.1' ],
+18 silly audit   asynckit: [ '0.4.0' ],
+18 silly audit   axios: [ '1.13.6' ],
+18 silly audit   'balanced-match': [ '4.0.4' ],
+18 silly audit   bcryptjs: [ '2.4.3' ],
+18 silly audit   'binary-extensions': [ '2.3.0' ],
+18 silly audit   'body-parser': [ '1.20.4' ],
+18 silly audit   'brace-expansion': [ '5.0.4' ],
+18 silly audit   braces: [ '3.0.3' ],
+18 silly audit   bson: [ '6.10.4' ],
+18 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+18 silly audit   bytes: [ '3.1.2' ],
+18 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+18 silly audit   'call-bound': [ '1.0.4' ],
+18 silly audit   chokidar: [ '3.6.0' ],
+18 silly audit   'combined-stream': [ '1.0.8' ],
+18 silly audit   'content-disposition': [ '0.5.4' ],
+18 silly audit   'content-type': [ '1.0.5' ],
+18 silly audit   cookie: [ '0.7.2' ],
+18 silly audit   'cookie-signature': [ '1.0.7' ],
+18 silly audit   cors: [ '2.8.6' ],
+18 silly audit   debug: [ '2.6.9', '4.4.3' ],
+18 silly audit   'delayed-stream': [ '1.0.0' ],
+18 silly audit   depd: [ '2.0.0' ],
+18 silly audit   destroy: [ '1.2.0' ],
+18 silly audit   dotenv: [ '16.6.1' ],
+18 silly audit   'dunder-proto': [ '1.0.1' ],
+18 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+18 silly audit   'ee-first': [ '1.1.1' ],
+18 silly audit   encodeurl: [ '2.0.0' ],
+18 silly audit   'es-define-property': [ '1.0.1' ],
+18 silly audit   'es-errors': [ '1.3.0' ],
+18 silly audit   'es-object-atoms': [ '1.1.1' ],
+18 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+18 silly audit   'escape-html': [ '1.0.3' ],
+18 silly audit   etag: [ '1.8.1' ],
+18 silly audit   express: [ '4.22.1' ],
+18 silly audit   'fill-range': [ '7.1.1' ],
+18 silly audit   finalhandler: [ '1.3.2' ],
+18 silly audit   'follow-redirects': [ '1.15.11' ],
+18 silly audit   'form-data': [ '4.0.5' ],
+18 silly audit   forwarded: [ '0.2.0' ],
+18 silly audit   fresh: [ '0.5.2' ],
+18 silly audit   fsevents: [ '2.3.3' ],
+18 silly audit   'function-bind': [ '1.1.2' ],
+18 silly audit   'get-intrinsic': [ '1.3.0' ],
+18 silly audit   'get-proto': [ '1.0.1' ],
+18 silly audit   'glob-parent': [ '5.1.2' ],
+18 silly audit   gopd: [ '1.2.0' ],
+18 silly audit   'has-flag': [ '3.0.0' ],
+18 silly audit   'has-symbols': [ '1.1.0' ],
+18 silly audit   'has-tostringtag': [ '1.0.2' ],
+18 silly audit   hasown: [ '2.0.2' ],
+18 silly audit   'http-errors': [ '2.0.1' ],
+18 silly audit   'iconv-lite': [ '0.4.24' ],
+18 silly audit   'ignore-by-default': [ '1.0.1' ],
+18 silly audit   inherits: [ '2.0.4' ],
+18 silly audit   'ipaddr.js': [ '1.9.1' ],
+18 silly audit   'is-binary-path': [ '2.1.0' ],
+18 silly audit   'is-extglob': [ '2.1.1' ],
+18 silly audit   'is-glob': [ '4.0.3' ],
+18 silly audit   'is-number': [ '7.0.0' ],
+18 silly audit   jsonwebtoken: [ '9.0.3' ],
+18 silly audit   ms: [ '2.1.3', '2.0.0' ],
+18 silly audit   jwa: [ '2.0.1' ],
+18 silly audit   jws: [ '4.0.1' ],
+18 silly audit   kareem: [ '2.6.3' ],
+18 silly audit   'lodash.includes': [ '4.3.0' ],
+18 silly audit   'lodash.isboolean': [ '3.0.3' ],
+18 silly audit   'lodash.isinteger': [ '4.0.4' ],
+18 silly audit   'lodash.isnumber': [ '3.0.3' ],
+18 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+18 silly audit   'lodash.isstring': [ '4.0.1' ],
+18 silly audit   'lodash.once': [ '4.1.1' ],
+18 silly audit   'math-intrinsics': [ '1.1.0' ],
+18 silly audit   'media-typer': [ '0.3.0' ],
+18 silly audit   'memory-pager': [ '1.5.0' ],
+18 silly audit   'merge-descriptors': [ '1.0.3' ],
+18 silly audit   methods: [ '1.1.2' ],
+18 silly audit   mime: [ '1.6.0' ],
+18 silly audit   'mime-db': [ '1.52.0' ],
+18 silly audit   'mime-types': [ '2.1.35' ],
+18 silly audit   minimatch: [ '10.2.4' ],
+18 silly audit   mongodb: [ '6.20.0' ],
+18 silly audit   'mongodb-connection-string-url': [ '3.0.2' ],
+18 silly audit   mongoose: [ '8.23.0' ],
+18 silly audit   mpath: [ '0.9.0' ],
+18 silly audit   mquery: [ '5.0.0' ],
+18 silly audit   negotiator: [ '0.6.3' ],
+18 silly audit   nodemon: [ '3.1.14' ],
+18 silly audit   'normalize-path': [ '3.0.0' ],
+18 silly audit   'object-assign': [ '4.1.1' ],
+18 silly audit   'object-inspect': [ '1.13.4' ],
+18 silly audit   'on-finished': [ '2.4.1' ],
+18 silly audit   parseurl: [ '1.3.3' ],
+18 silly audit   'path-to-regexp': [ '0.1.12' ],
+18 silly audit   picomatch: [ '2.3.1' ],
+18 silly audit   'proxy-addr': [ '2.0.7' ],
+18 silly audit   'proxy-from-env': [ '1.1.0' ],
+18 silly audit   'pstree.remy': [ '1.1.8' ],
+18 silly audit   punycode: [ '2.3.1' ],
+18 silly audit   qs: [ '6.14.2' ],
+18 silly audit   'range-parser': [ '1.2.1' ],
+18 silly audit   'raw-body': [ '2.5.3' ],
+18 silly audit   readdirp: [ '3.6.0' ],
+18 silly audit   'safe-buffer': [ '5.2.1' ],
+18 silly audit   'safer-buffer': [ '2.1.2' ],
+18 silly audit   semver: [ '7.7.4' ],
+18 silly audit   send: [ '0.19.2' ],
+18 silly audit   'serve-static': [ '1.16.3' ],
+18 silly audit   setprototypeof: [ '1.2.0' ],
+18 silly audit   'side-channel': [ '1.1.0' ],
+18 silly audit   'side-channel-list': [ '1.0.0' ],
+18 silly audit   'side-channel-map': [ '1.0.1' ],
+18 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+18 silly audit   sift: [ '17.1.3' ],
+18 silly audit   'simple-update-notifier': [ '2.0.0' ],
+18 silly audit   'sparse-bitfield': [ '3.0.3' ],
+18 silly audit   statuses: [ '2.0.2' ],
+18 silly audit   'supports-color': [ '5.5.0' ],
+18 silly audit   'to-regex-range': [ '5.0.1' ],
+18 silly audit   toidentifier: [ '1.0.1' ],
+18 silly audit   touch: [ '3.1.1' ],
+18 silly audit   tr46: [ '5.1.1' ],
+18 silly audit   'type-is': [ '1.6.18' ],
+18 silly audit   undefsafe: [ '2.0.5' ],
+18 silly audit   unpipe: [ '1.0.0' ],
+18 silly audit   'utils-merge': [ '1.0.1' ],
+18 silly audit   vary: [ '1.1.2' ],
+18 silly audit   'webidl-conversions': [ '7.0.0' ],
+18 silly audit   'whatwg-url': [ '14.2.0' ]
+18 silly audit }
+19 verbose reify failed optional dependency /home/container/node_modules/fsevents
+20 silly reify mark deleted [ '/home/container/node_modules/fsevents' ]
+21 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 317ms
+22 silly audit report {}
+23 silly ADD
+24 verbose cwd /home/container
+25 verbose os Linux 6.14.0-1018-aws
+26 verbose node v21.7.3
+27 verbose npm  v10.9.4
+28 verbose exit 0
+29 info ok
