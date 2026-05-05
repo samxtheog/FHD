@@ -42,13 +42,30 @@ const initAdmin = async () => {
   }
 };
 
+// Self-ping every 5 minutes to keep Render free tier alive
+const selfPing = () => {
+  const url = process.env.RENDER_EXTERNAL_URL;
+  if (!url) return;
+  setInterval(async () => {
+    try {
+      const { default: https } = await import('https');
+      https.get(url, (res) => console.log(`Self-ping: ${res.statusCode}`))
+           .on('error', (err) => console.error('Self-ping error:', err.message));
+    } catch (e) {
+      console.error('Self-ping failed:', e.message);
+    }
+  }, 5 * 60 * 1000);
+};
+
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('Connected to MongoDB');
     initAdmin();
-    app.listen(process.env.PORT, () => {
-      console.log(`Server running on port ${process.env.PORT}`);
+    const PORT = process.env.PORT || 10000;
+    app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`);
+      selfPing();
     });
   })
   .catch(err => console.error('MongoDB connection error:', err));

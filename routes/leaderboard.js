@@ -3,8 +3,7 @@ import axios from 'axios';
 
 const router = express.Router();
 
-const GOOGLE_SHEETS_CSV_URL =
-  'https://docs.google.com/spreadsheets/d/e/2PACX-1vTb5cYsZxShOkcmmSCC5gelT9rLd12TxPyeVKN_dZ9dK9A3xpJUFN5bEW9--6aMpoyra8eOqDOjc_ie/pub?gid=903546640&single=true&output=csv';
+const GOOGLE_SHEETS_CSV_URL = process.env.GOOGLE_SHEETS_CSV_URL;
 
 // Parse CSV data with proper handling for quoted values
 const parseCSV = (csvText) => {
@@ -57,8 +56,11 @@ const cleanCurrency = (value) => {
 
 // Get leaderboard data - fetches directly from Google Sheets
 router.get('/', async (req, res) => {
+  if (!GOOGLE_SHEETS_CSV_URL) {
+    return res.status(500).json({ success: false, message: 'GOOGLE_SHEETS_CSV_URL is not configured' });
+  }
   try {
-    const response = await axios.get(GOOGLE_SHEETS_CSV_URL);
+    const response = await axios.get(GOOGLE_SHEETS_CSV_URL, { timeout: 10000 });
     const csvData = parseCSV(response.data);
     
     console.log('Parsed entries:', csvData.length);
